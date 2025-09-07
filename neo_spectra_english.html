@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TOEPS Score — Template Hasil</title>
+  <meta name="description" content="Tampilan hasil skor TOEPS / sertifikat pendidikan - template sederhana, responsif, dan mudah dikustomisasi." />
+  <meta name="keywords" content="TOEPS, hasil tes, sertifikat, skor, template" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome untuk ikon sosial -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    :root{
+      --purple:#6f2cd5;
+      --purple-dark:#5a22b1;
+      --muted:#666;
+      --container:1100px;
+      --radius:12px;
+      font-family: 'Inter', system-ui, Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;color:#222;line-height:1.5;background:#fafafa}
+    header.hero{
+      background-image:linear-gradient(135deg, rgba(111,44,213,0.92), rgba(90,34,177,0.88)), url('https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=');
+      background-size:cover;background-position:center;padding:60px 16px;color:#fff;
+    }
+    .wrap{max-width:var(--container);margin:0 auto}
+    .hero .title{font-size:26px;font-weight:700;margin-bottom:8px}
+    .meta{display:flex;gap:12px;align-items:center;font-size:14px;opacity:0.95}
+
+    main{padding:36px 16px}
+    .card{background:#fff;border-radius:var(--radius);box-shadow:0 6px 20px rgba(10,10,10,0.06);padding:28px;margin-bottom:24px}
+
+    .result-list{max-width:760px}
+    .result-list p{margin:8px 0;color:var(--muted)}
+    .result-list .label{color:#333;font-weight:600}
+    .scores{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:12px}
+    .score-box{background:#f7f5ff;border-radius:8px;padding:12px;text-align:center}
+    .score-box strong{display:block;font-size:20px}
+
+    .legal{font-size:14px;color:var(--muted);margin-top:16px}
+    .social{display:flex;gap:10px;margin-top:18px}
+    .social a{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:#f0f0ff;text-decoration:none;color:var(--purple);}
+
+    /* komentar */
+    form.comment{margin-top:18px}
+    form textarea, form input{width:100%;padding:12px;border:1px solid #e6e6e6;border-radius:8px;font-size:14px}
+    form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    form button{background:var(--purple);color:#fff;border:none;padding:12px 18px;border-radius:8px;font-weight:600;cursor:pointer}
+
+    footer{padding:30px 16px;text-align:center;color:var(--muted);font-size:14px}
+
+    /* responsive tweaks */
+    @media (max-width:600px){
+      .hero .title{font-size:20px}
+      form .row{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="title">Number: 13.24470/LKP-NSE/III/2024</div>
+      <div class="meta">
+        <div><i class="fa-regular fa-user"></i> Neo Spectra English</div>
+        <div>•</div>
+        <div><i class="fa-regular fa-calendar"></i> March 20, 2024</div>
+        <div>•</div>
+        <div>TOEPS Score</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <article class="card result-list">
+        <p><span class="label">Full Name :</span> Wayan Nurfidi</p>
+        <p><span class="label">Date of Birth :</span> Rumbia, June 1, 2002</p>
+
+        <div class="scores">
+          <div class="score-box">
+            <small>Section 1</small>
+            <strong>58</strong>
+          </div>
+          <div class="score-box">
+            <small>Section 2</small>
+            <strong>60</strong>
+          </div>
+          <div class="score-box">
+            <small>Section 3</small>
+            <strong>59</strong>
+          </div>
+          <div class="score-box">
+            <small>Total Score</small>
+            <strong>590</strong>
+          </div>
+        </div>
+
+        <div class="legal">
+          <h4 style="margin:12px 0 6px 0">Legalitas Lembaga:</h4>
+          <p>LKP Neo Spectra English</p>
+          <ul>
+            <li>NPSN: K9997523</li>
+            <li>SK Ijin Operasional Dinas Pendidikan: 421.10/Kep.647/Disdik/2021</li>
+            <li>SK Menkumham: AHU-0031512-AH.01.16</li>
+            <li>NIB: 2309210037761</li>
+          </ul>
+
+          <div class="social">
+            <a href="#" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#" aria-label="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <section class="card">
+        <h3>Leave a Reply</h3>
+        <p style="color:var(--muted);font-size:13px;">Your email address will not be published. Required fields are marked *</p>
+
+        <form class="comment" onsubmit="event.preventDefault();submitComment();">
+          <div style="margin-bottom:12px">
+            <label for="comment">Comment *</label>
+            <textarea id="comment" rows="5" required></textarea>
+          </div>
+
+          <div class="row" style="margin-bottom:12px">
+            <div>
+              <label for="name">Name *</label>
+              <input id="name" type="text" required />
+            </div>
+            <div>
+              <label for="email">Email *</label>
+              <input id="email" type="email" required />
+            </div>
+          </div>
+
+          <div style="display:flex;gap:12px;align-items:center">
+            <button type="submit">Post Comment</button>
+            <div style="font-size:13px;color:var(--muted)">or contact via <a href="https://wa.me/628123456789" target="_blank">WhatsApp</a></div>
+          </div>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Neo Spectra English — All rights reserved.
+  </footer>
+
+  <script>
+    // small JS untuk interaksi sederhana
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function submitComment(){
+      const name = document.getElementById('name').value.trim();
+      const comment = document.getElementById('comment').value.trim();
+      if(!name || !comment){ alert('Mohon isi semua field yang wajib.'); return }
+      alert('Terima kasih, komentar Anda akan dikirim (demo).');
+      // di produksi: kirim ke API / simpan ke backend
+      document.getElementById('comment').value='';
+      document.getElementById('name').value='';
+      document.getElementById('email').value='';
+    }
+  </script>
+</body>
+</html>
